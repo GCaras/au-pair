@@ -1,0 +1,22 @@
+.navbar {
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+.ul {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.navbar-link{
+    margin: 10px 20px;
+}
