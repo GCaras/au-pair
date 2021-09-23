@@ -43,6 +43,13 @@ const navData = {
             linkDescription: 'This will take you to the placeholder page',
             newWindow: false,
         },
+        {
+            id: 'navLink3',
+            linkDisplayText: 'Placeholder Nav 2',
+            linkDestination: '/placeholder2',
+            linkDescription: 'This will take you to another placeholder page',
+            newWindow: false,
+        },
     ]
 }
 

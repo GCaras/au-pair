@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+import { ThemeContext } from "../../providers/ThemeProvider";
 import './Navbar.css';
 
 const nav = require('../../data/nav').default;
@@ -7,12 +8,20 @@ const Navbar = () => {
     //Update src/data/nav to add new Navbar links
     var navLinks = nav.navLinks;
 
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <Fragment>
-            <div className="navbar">
-                {navLinks.map((link) => {
+            <div className={darkMode ? 'dark-navbar' : 'light-navbar'}>
+                {navLinks.map((link, i) => {
                     return (
-                        <a href={link.linkDestination} className='navbar-link'>
+                        <a 
+                            aria-label={link.linkDescription} 
+                            href={link.linkDestination} 
+                            className='navbar-link'
+                            key={i}
+                        >
                             {link.linkDisplayText}
                         </a>
                     )

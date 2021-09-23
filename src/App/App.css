@@ -1,8 +1,37 @@
 a {
+  color: rgb(0, 177, 177);
   color: rgb(193, 193, 193);
   text-decoration: none;
 }
 
 a:visited {
-  color: cyan;
+  color: rgb(193, 193, 193);
+
+  text-decoration: none;
+}
+
+.app-dark {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+  min-height: 5vh;
+  text-align: center;
+}
+
+.app-light {
+  align-items: center;
+  background-color: white;
+  color: #282c34;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+  min-height: 5vh;
+  text-align: center;
 }

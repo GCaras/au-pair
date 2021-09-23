@@ -1,16 +1,25 @@
-.App-header {
-    align-items: center;
-    background-color: #282c34;
-    color: white;
+.title-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
-    margin: 0 auto;
-    min-height: 5vh;
-    text-align: center;
+    flex-direction: row;
+
 }
 
-.App-title {
+.theme-button-container {
+    width: 100vw;
+  }
+  
+  .btn-dark {
+    float: right;
+    background-color: #282c34;
+    color: cyan;
+  }
+  
+  .btn-light {
+    float: right;
+    background-color: white;
+    color: #282c34;
+  }
+
+.app-title {
     margin-bottom: 0;
 }

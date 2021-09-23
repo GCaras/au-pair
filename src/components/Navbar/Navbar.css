@@ -1,17 +1,26 @@
-.navbar {
+.dark-navbar {
     align-items: center;
     background-color: #282c34;
     color: white;
     display: flex;
     font-size: calc(10px + 2vmin);
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px 0;
   }
+
+.light-navbar {
+    align-items: center;
+    background-color: white;
+    color: #282c34;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    justify-content: space-around;
+    padding: 10px 0;
+}
 
 .ul {
     display: flex;
     flex-direction: row;
-
     margin: 0 auto;
     padding: 0;
 }
